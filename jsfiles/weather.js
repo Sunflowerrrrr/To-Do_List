@@ -35,7 +35,7 @@ function handleGeoSuccess(position) {
 
 function handleGeoError(position) {
   console.log("location err");
-  alert("위치를 표시할 수 없습니다.");
+  weather.innerText(`위치를 표시할 수 없습니다.`);
 }
 
 function askForCoords() {
