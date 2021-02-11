@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>MUOL✔ - Setting</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, 
+  maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <!-- 모바일 최적화 -->
+    <meta name="description" content="Check a To-do List, whenever you come here" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" />
+    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="images\logo.png" />
+    <link rel="stylesheet" href="cssfiles/index.css" />
+  </head>
+  <body>
+    <div class="settingInfo">
+      <a class="prev" href="index.html"><i class="far fa-chevron-left fa-2x"></i></a>
+      <span>Setting</span>
+      <i class="fas fa-poo fa-2x" onclick="clickPoop();"></i>
+    </div>
+
+    <div class="settingList">
+      <ul class="setting-list">
+        <li class="setting-items">
+          <div class="setting-column" onclick="clickCngName();">
+            <i class="far fa-font"></i>
+            <span>Change Name</span>
+          </div>
+        </li>
+        <li class="setting-items">
+          <div class="setting-column" onclick="clickClrTodos();">
+            <i class="far fa-trash-alt"></i>
+            <span>Clear All To-Dos</span>
+          </div>
+        </li>
+        <li class="setting-items warning">
+          <div class="setting-column" onclick="clickInitialize();">
+            <i class="fas fa-eraser"></i>
+            <span>Delete All Data!</span>
+          </div>
+        </li>
+        <a href="mailto:01179hk@gmail.com">
+          <li class="setting-items">
+            <div class="setting-column" onclick="clickMode()">
+              <i class="far fa-envelope"></i>
+              <span>Send E-Mail to Contact</span>
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+
+    <script src="jsfiles/todo.js"></script>
+    <script src="jsfiles/clock.js"></script>
+    <script src="jsfiles/greeting.js"></script>
+    <script src="jsfiles/setting.js"></script>
+  </body>
+</html>

@@ -42,7 +42,7 @@ function paintToDo(text) {
   saveToDos();
 }
 
-function handleSubmit(event) {
+function handleSubmitTodo(event) {
   event.preventDefault();
   const currentValue = toDoInput.value;
   paintToDo(currentValue);
@@ -59,9 +59,17 @@ function loadToDos() {
   }
 }
 
+function clearTodos() {
+  localStorage.removeItem("toDos");
+}
+
+function clearAll() {
+  localStorage.clear();
+}
+
 function init() {
   loadToDos();
-  toDoForm.addEventListener("submit", handleSubmit);
+  toDoForm.addEventListener("submit", handleSubmitTodo);
 }
 
 init();

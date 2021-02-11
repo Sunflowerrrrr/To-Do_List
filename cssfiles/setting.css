@@ -1,0 +1,108 @@
+.settingInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 20px;
+  margin-bottom: 50px;
+}
+
+.settingInfo:first-child {
+  margin-right: auto;
+}
+
+.settingInfo:nth-child(2) {
+  text-align: center;
+}
+
+.settingInfo span {
+  font-size: 30px;
+  border-bottom: 3px solid var(--mainColor);
+}
+
+.settingInfo:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.settingInfo i {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+@keyframes poopColor {
+  from {
+    color: var(--mainColor);
+  }
+  to {
+    color: rgb(177, 153, 103);
+  }
+}
+
+.fa-poo:hover {
+  animation: poopColor 0.5s ease-in-out forwards;
+}
+
+.setting-list {
+  padding: 0px 20px;
+}
+
+.setting-items {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--mainColor);
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting-items i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.setting-column:last-child {
+  margin-right: 5px;
+}
+
+@keyframes hoverPop {
+  from {
+    color: var(--mainColor);
+  }
+  to {
+    color: rgb(255, 245, 104);
+  }
+}
+
+.setting-items:hover {
+  animation: hoverPop 0.5s ease-in-out forwards;
+}
+
+@keyframes hoverPop2 {
+  from {
+    color: var(--mainColor);
+  }
+  to {
+    color: rgb(255, 104, 104);
+  }
+}
+
+.warning:hover {
+  animation: hoverPop2 0.5s ease-in-out forwards;
+}
+
+@keyframes backward {
+  0% {
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+  }
+}
+
+.fa-chevron-left:hover {
+  animation: backward 1s ease-in-out infinite;
+}
