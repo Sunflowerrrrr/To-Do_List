@@ -36,6 +36,11 @@ function loadName() {
   }
 }
 
+function changeName(text) {
+  localStorage.removeItem(USER_LS, text);
+  saveName(text);
+}
+
 function init() {
   loadName();
 }
